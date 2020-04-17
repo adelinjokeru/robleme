@@ -1,3 +1,38 @@
+
+Șeful vostru planuiește să sărbatorească fiecare angajat într-o petrecere. Pentru asta are nevoie să știe în care zile are nevoie să facă petreceri, știind că e mai mult decât posibil ca mai mulți angajați să își aniverseze ziua de naștere în aceeași zi (si deci aceeasi petrecere sa fie pentru ei). El vrea lista ordonată calendaristic.
+
+Date de intrare
+
+Pe fiecare linie de intrare, până la EOF, se află o zi de naștere în format ll-zz. 
+
+Date de ieșire
+
+Se va afișa pe fiecare linie o zi de naștere, în format ll-zz, astfel încât zilele să fie ordonate calendaristic și să nu se repete. Se va printa un caracter newline și după ultima linie.
+
+Exemplu
+
+Intrare:
+
+01-10
+01-30
+11-26
+03-21
+07-19
+11-26
+
+Ieșire:
+
+01-10
+01-30
+03-21
+07-19
+11-26
+
+VPL
+
+
+
+
 #include <string>
 #include <iostream>
 #include <set>
