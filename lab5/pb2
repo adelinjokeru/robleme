@@ -1,0 +1,57 @@
+
+Ați primit din nou o listă de cumpărături, doar că de aceasta dată de la o companie care dorește să înceapă producția în masă a unui echipament. Aveți contract cu un furnizor care poate livra o parte din echipamente și care v-a transmis o listă de produse pe care le au în stoc. Stocul acestora este extrem de mare, având zeci de mii de produse. Având lista de cumpărături și catalogul furnizorului, afișați câte din produse pot fi achiziționate de la acel furnizor.
+
+Atenție: evaluarea durează peste două minute.
+
+Date de intrare
+
+Pe prima linie se află un număr n reprezentând numărul de echipamente de pe lista de cumpărături. Următoarele n cuvinte, separate prin whitespace, reprezintă lista de cumpărături. Următoarele cuvinte, până la EOF, reprezintă lista de produse din catalogul furnizorului, separate prin spațiu. Nu se repetă nici un echipament pe lista de cumpărături sau în catalog.
+
+Exemplu:
+
+5
+motor_diesel saibe oglinzi anvelope scaune
+piulite suruburi saibe cuie ciocane surubelnite
+
+Date de ieșire
+
+La ieșire se va afișa un singur număr reprezentând numărul de produse de pe lista de cumpărături care poate fi achiziționat de la furnizor.
+
+Exemplu (pentru intrarea de mai sus):
+
+1
+
+
+
+
+
+#include <string>
+#include <iostream>
+#include <set>
+using namespace std;
+int main()
+{
+int n;
+cin>>n;
+    string date;
+    std::set<string> myset;
+   for(int i=0;i<n;i++)
+   {
+       cin>>date;
+       myset.insert(date);
+   }
+   int k=0;
+   string obiecte;
+   while(cin>>obiecte)
+   {
+         auto search=myset.find(obiecte);
+         if(search!=myset.end())
+         {
+             k++;
+         }
+   }
+   cout<<k;
+   
+   
+return 0;
+}
