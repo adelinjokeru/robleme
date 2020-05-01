@@ -1,0 +1,30 @@
+Ați fost angajați de un dicționar online să le rescrieți softul de căutare de cuvinte. Ei vă pun la dispozitie datele într-un format CSV și voi trebuie să construiți dicționarul și apoi să realizați căutările cerute de clienți.
+
+Date de intrare
+
+Pe prima linie se află un număr n reprezentând numărul de cuvinte din dicționar.
+
+Pe următoarele n linii se găsesc: un cuvânt, urmat de o virgulă, urmat de o secvență de cuvinte ce reprezintă definiția cuvântului.
+
+După aceste n linii se află o secvență de dimensiune necunoscută de cuvinte (până la sfarșitul streamului) care trebuie căutate în baza de date.
+
+Un cuvânt nu poate depăși 30 de caractere, iar o definiție nu poate depăși 1024 de caractere.
+Date de ieșire
+
+Pentru fiecare cuvânt ce trebuie căutat, se va afișa cuvântul, urmat de ": ", urmat de definiția lui din dicționar. Dacă cuvântul nu există în dicționar, se va afișa "-". După fiecare linie de ieșire se va adăuga un caracter newline.
+
+Exemplu
+
+Intrare:
+
+3
+pisica,Animal domestic cu blana care miauna
+caine,Animal domestic cu blana care latra
+elefant,Animal salbatic cu trompa
+caine rata pisica
+
+Ieșire:
+
+caine: Animal domestic cu blana care latra
+rata: -
+pisica: Animal domestic cu blana care miauna
