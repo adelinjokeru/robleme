@@ -1,0 +1,24 @@
+Pe prima linie se află un număr p reprezentând numărul de prieteni. Pe următoarele p linii se află următoarele date:
+
+nume_prieten numar_jocuri nume_joc_1 nume_joc_2 ... nume_joc_n
+
+Numele prietenilor, ca și numele jocurilor sunt formate dintr-un singur cuvânt (fară whitespace), de maxim 30 de caractere.
+
+Pe ultima linie se află un nume de joc pe care ați vrea să-l jucați.
+Date de ieșire
+
+Se va afișa câți din prietenii voștri au jocul pe care doriți să-l jucați.
+
+Exemplu
+
+Intrare:
+
+3
+Andrei 2 Call_Of_Duty_4 Medal_Of_Honor
+Ioana 4 Starcraft Warcraft Mass_Effect Need_For_Speed
+Vlad 3 Medal_Of_Honor Warcraft Prince_Of_Persia
+Medal_Of_Honor
+
+Ieșire:
+
+2
